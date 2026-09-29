@@ -21,9 +21,8 @@ cask "zeltro" do
 
   # The app is not signed with an Apple Developer ID yet. Clearing the download
   # flag lets it open without Gatekeeper's "unidentified developer" block.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Zeltro.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Zeltro.app"], must_succeed: false
   end
 
   zap trash: [
