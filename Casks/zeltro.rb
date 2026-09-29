@@ -8,7 +8,7 @@ cask "zeltro" do
   url "https://github.com/CaneBayComputers/zeltro-releases/releases/download/v#{version}/Zeltro-#{version}-mac-#{arch}.zip"
   name "Zeltro"
   desc "Build and run projects with AI"
-  homepage "https://zeltro.build/"
+  homepage "https://zeltro.ai/"
 
   livecheck do
     url :url
