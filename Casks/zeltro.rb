@@ -1,9 +1,9 @@
 cask "zeltro" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.0.0-beta.25"
-  sha256 arm:   "28c47db5a44dc29b4726235c289978462ca69b510ffc8b9326aa99c465341742",
-         intel: "96bfdc1eb41b2ba0dc5a7098334f2a39bb84dc4b0ecdc15fae605d8ec5676fab"
+  version "1.0.0-beta.26"
+  sha256 arm:   "b5e98e66bec4cae68aaab0730977b8991331bae3d5c393787b1931ac62a8a371",
+         intel: "bfb1a58414d17a6bcc51bc042ed7de32fa10c1ed78234591f7e5f0b565842c61"
 
   url "https://github.com/CaneBayComputers/zeltro-releases/releases/download/v#{version}/Zeltro-#{version}-mac-#{arch}.zip"
   name "Zeltro"
